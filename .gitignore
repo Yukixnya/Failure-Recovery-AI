@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.venv/
+vnev/
+
+# ML artifacts
+models/*.pkl
+
+# Runtime learning memory
+data/unknown_failures.json
+data/training_candidates.json

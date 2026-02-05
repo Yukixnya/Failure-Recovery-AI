@@ -1,0 +1,24 @@
+Invoke-RestMethod `
+  -Uri "http://127.0.0.1:5000/analyze" `
+  -Method POST `
+  -Headers @{ "Content-Type" = "application/json" } `
+  -Body '{"log":"Kernel panic detected in storage controller"}' |
+ConvertTo-Json
+
+Invoke-RestMethod `
+>>   -Uri "http://127.0.0.1:5000/analyze" `
+>>   -Method POST `
+>>   -Headers @{ "Content-Type" = "application/json" } `
+>>   -Body '{"log":"ERROR CPU usage spike in order service"}'
+
+Invoke-RestMethod `
+>>   -Uri "http://127.0.0.1:5000/analyze" `
+>>   -Method POST `
+>>   -Headers @{ "Content-Type" = "application/json" } `
+>>   -Body '{"log":"ERROR cache eviction failure in recommendation service"}'
+
+Invoke-RestMethod `
+>>   -Uri "http://127.0.0.1:5000/analyze" `
+>>   -Method POST `
+>>   -Headers @{ "Content-Type" = "application/json" } `
+>>   -Body '{"log":"DCOM 10016 permission issue on Windows system"}'

@@ -1,0 +1,7 @@
+ERROR DB connection timeout in auth service
+ERROR DB connection timeout in payment service
+WARN memory usage high in auth service
+ERROR out of memory in auth service
+INFO service restarted successfully
+ERROR CPU usage spike in order service
+ERROR CPU usage spike in order service
